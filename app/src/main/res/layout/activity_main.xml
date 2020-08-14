@@ -36,13 +36,14 @@
             android:textAlignment="center" />
 
         <Button
+            android:id="@+id/payButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="16dp"
             android:backgroundTint="@color/colorPrimary"
             android:textColor="@android:color/white"
-            android:text="Pagar" />
+            android:text="@string/pay_action" />
 
     </LinearLayout>
 
