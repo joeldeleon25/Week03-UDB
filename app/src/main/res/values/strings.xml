@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Week03-UDB</string>
-    <string name="safe_payment_title">Paga seguro con UDB Pay</string>
-    <string name="safe_payment_description">Paga las cuotas de tu universidad y cursos con un click</string>
-    <string name="pay_action">Pagar</string>
+    <string name="safe_payment_title">Pay safely with UDB Pay</string>
+    <string name="safe_payment_description">Pay your university fee or courses by a simple click</string>
+    <string name="pay_action">Pay</string>
 </resources>
