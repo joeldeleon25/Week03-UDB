@@ -1,8 +1,8 @@
 package com.naibeck.week03_udb
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
@@ -11,16 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val payButton = findViewById<Button>(R.id.payButton)
         payButton.setOnClickListener {
-            payButton.text = changeButtonText(payButton)
-            Toast.makeText(this, "This will move to my next activity", Toast.LENGTH_SHORT).show()
-        }
-    }
-
-    private fun changeButtonText(payButton: Button): String {
-        return if (payButton.text.contains("Pagar", ignoreCase = true)) {
-            "Pagando..."
-        } else {
-            getString(R.string.pay_action)
+            val intent = Intent(this, PaymentFormActivity::class.java)
+            startActivity(intent)
         }
     }
 }
